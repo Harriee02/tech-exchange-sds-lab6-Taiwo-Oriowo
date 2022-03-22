@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Geography Quiz!</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+<body>
+    <h1>BEHOLD THE RESULTS!!</h1>
+    {% if newYork == True %}
+        <p>That's right! The capital is Albany!</p>
+    {% else %}
+        <p>
+            Sorry, that's not quite right. New York's capital is wrong!!
+            <a href="/">Click here to go back and try again.</a>
+        </p>
+    {% endif %}
+
+    {% if california == True %}
+        <p>That's right! The capital is Sacramento!</p>
+    {% else %} 
+        <p>
+            Sorry, that's not quite right. California's capital is wrong!!
+            <a href="/">Click here to go back and try again.</a>
+        </p>
+    {% endif %} 
+
+    {% if utah == True %}
+        <p>That's right! The capital is Salt Lake City!</p>
+    {% else %}
+        <p>
+            Sorry, that's not quite right. Utah's capital is wrong!!
+            <a href="/">Click here to go back and try again.</a>
+        </p>
+    {% endif %}
+
+    {% if alabama == True %}
+        <p>That's right! The capital is Montgomery!</p>
+    {% else %} 
+        <p>
+            Sorry, that's not quite right. Alabama's capital is wrong!!
+            <a href="/">Click here to go back and try again.</a>
+        </p>
+    {% endif %}
+
+    {% if ohio == True %}
+        <p>That's right! The capital is Columbus!</p>
+    {% else %}
+        <p>
+            Sorry, that's not quite right. Ohio's capital is wrong!!
+            <a href="/">Click here to go back and try again.</a>
+        </p>
+    {% endif %}
+
+    <h2>Your Performance History</h2>
+        <p> You have got {{point}} points</p>
+    <!-- {% for capital in previous %}
+        <p> You got 1 point for knowing {{ capital }}</p>
+    {% endfor %}  -->
+    <h3> You have a total of {{ point }} points so far!</h3>
+    </body>
+</html>
